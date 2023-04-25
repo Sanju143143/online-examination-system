@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="attendance.css">
+        <title>ATTENDANCE</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    </head>
+    <body>
+        <h2 class='text-center bg-dark text-white py-2'>MARK ATTENDANCE</h2>
+        <div class="container">
+            <form>
+                <div class="my-2">
+                    <label for="rnoValue">Registration Number :</label>
+                    <input id='rnoValue' type="tel" class="form-control my-2"placeholder="Enter Registration Number" name="rnoValue">
+                </div>
+                <div class="my-2">
+                    <label for="datetimeValue">Select Date :</label>
+                    <input id='datetimeValue' type="datetime-local" class="form-control my-2" name="datetimeValue">
+                </div>
+                <label for="subjectValue" class="form-label my-1">Select subject :</label>
+                <select class="form-select my-1" id="subjectValue" name="subjectValue">
+                    <option>AI</option>
+                    <option>ES</option>
+                    <option>SN</option>
+                    <option>DWDM</option>
+                    <option>WT</option>
+                    <option>CD</option>
+                    <option>ES LAB</option>
+                    <option>WT LAB</option>
+                    <option>LOW CODE</option>
+                </select>
+                <label for="attValue" class="form-label my-1">Select Attendance :</label>
+                <select class="form-select my-1" id="attValue" name="attValue">
+                    <option>PRESENT</option>
+                    <option>ABSENT</option>
+                </select>
+                <div class="my-2 text-center">
+                    <button class="btn btn-primary" id='sub1'>SUBMIT</button>
+                </div> 
+                <div class="my-2 text-center">
+                    <button class="btn btn-primary" id='sub2'>FETCH PAST DATA</button>
+                </div>  
+            </form> 
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <span id="close" title="close">&times;</span>
+                        <div id="mytable"></div>
+                    </div>        
+                </div>
+            </div>  
+        </div>
+        <script src='attendance.js'></script>
+    </body>
+</html>

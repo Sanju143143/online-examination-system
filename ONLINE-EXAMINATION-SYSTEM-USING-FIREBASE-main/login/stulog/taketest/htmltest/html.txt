@@ -1,0 +1,68 @@
+2) 
+a) three
+b) four
+c) five
+d) six
+Ans. d)
+
+3) The purpose of markup is to
+a) add hypertext capabilities
+b) enhance the document
+c) both A & B
+d) None of the above
+Ans. c)
+
+4) Which of the following tags do not require a terminator?
+a) <u>
+b) <br>
+c) <b>
+d) None of the above
+Ans. b)
+
+5) To get the ordered list we use
+a) <h1>
+b) <ul>
+c) <ol>
+d) <ml>
+Ans. c)
+
+10) html comment should be enclosed between
+a) <!– and — >
+b) <! And !>
+c) <!— and –“”
+d) None of the above
+Ans. a)
+
+11) _____ tag is used before beginning of the paragraph text
+a) <textarea>
+b) <sup>
+c) <p>
+d) <h1>
+Ans. c)
+
+14) html document have a extension ______
+a) .htx or .htxl
+b) .htm or .html
+c) .hmt or hmtl
+d) None of the above
+Ans. b)
+
+15) The _____ element can be used to identify your html file to the outside world
+a) title
+b) body
+c) head
+d) None of the above
+Ans. d)
+
+24) The symbol that identities that HREF attribute as the name of a NAME anchor rather than an address or filename is
+A) “&”
+B) “$”
+C) “#”
+D) “!”
+Ans. C
+
+Q.	
+Apart from <b> tag, what other tag makes text bold ?
+A.<fat>B.<strong>
+C.<black>D.<emp>
+Answer : <strong> [Option : B]

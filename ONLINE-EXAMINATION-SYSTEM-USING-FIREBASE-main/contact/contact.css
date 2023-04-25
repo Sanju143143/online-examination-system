@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body
+  {
+    background-image:url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position:center;
+    background-attachment: fixed;
+  }
+  label{
+    font-size:1.3rem;
+    font-weight:600;
+  }

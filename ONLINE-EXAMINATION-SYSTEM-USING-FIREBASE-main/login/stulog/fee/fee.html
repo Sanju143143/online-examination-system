@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fee.css">
+    <title>FEE PAYMENT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <h2 class='text-center bg-dark text-white py-2'>FEE PAYMENT</h2>
+    <div class="container">
+      <form>
+        <div class="my-2">
+          <label for="rnoValue">Registration Number :</label>
+          <input id='rnoValue' type="tel" class="form-control my-2" placeholder="Enter Registration Number" name="rnoValue">
+        </div>
+        <div class="my-2">
+          <label for="nameValue">Student Name :</label>
+          <input id='nameValue' type="text" class="form-control my-2" placeholder="Enter Your Name" name="nameValue">
+        </div> 
+        <div class="my-2">
+          <label for="phoneValue">Phone Number :</label>
+          <input id='phoneValue' type="tel" class="form-control my-2" placeholder="Enter Phone Number" name="phoneValue">
+        </div>
+        <div class="my-2">
+          <label for="emailValue">Email :</label>
+          <input id='emailValue' type="email" class="form-control my-2" placeholder="Enter Your Email" name="emailValue">
+        </div>
+        <label for="genderValue" class="form-label my-2">Select Gender :</label>
+        <select class="form-select my-2" id="genderValue" name="genderValue">
+          <option>MALE</option>
+          <option>FEMALE</option>
+        </select>
+        <label for="branchValue" class="form-label my-2">Select Branch :</label>
+                <select class="form-select my-2" id="branchValue" name="branchValue">
+                    <option>CSE</option>
+                    <option>IT</option>
+                    <option>ECE</option>
+                    <option>EEE</option>
+                    <option>CIVIL</option>
+                    <option>MECHANIC</option>
+                    <option>CHEMICAL</option>
+                    <option>METALLURGY</option>
+                    <option>INSTRUMENTAL</option>
+                    <option>MARINE</option>
+                </select>
+        <div class="my-2">
+          <label for="cfeeValue">College Fee :</label>
+          <input id='cfeeValue' type="tel" class="form-control my-2" placeholder="Enter Fee Amount" name="cfeeValue">
+        </div>
+        <div class="my-2">
+          <label for="fineValue">Fine Amount :</label>
+          <input id='fineValue' type="tel" class="form-control my-2" placeholder="Enter Fine Amount" name="fineValue">
+        </div>
+        <label for="yearValue" class="form-label my-2">Select year :</label>
+        <select class="form-select my-2" id="yearValue" name="yearValue">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+        <label for="quarterValue" class="form-label my-2">Select Quarter :</label>
+        <select class="form-select my-2" id="quarterValue" name="quarterValue">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+        <div class="my-2">
+          <label for="remarksValue">Remarks :</label><span>(Optional)</span>
+          <input id='remarksValue' type="tel" class="form-control my-2" placeholder="Enter Remarks..." name="remarksValue">
+        </div> 
+        <div class="my-2 text-center">
+          <button type='submit' class="btn btn-primary my-2" id='sub1' >PROCEED TO CHECKOUT</button>
+        </div> 
+        <div class="my-2 text-center">
+          <button type='submit' class="btn btn-primary my-2" id='sub2' >GET PAST PAYMENTS</button>
+        </div> 
+        <div class="my-2 text-center">
+          <button type='submit' class="btn btn-primary my-2" id='sub3' >GET HELP<i class="fa fa-question-circle" aria-hidden="true"></i></button>
+        </div> 
+      </form>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <span id="close" title="close">&times;</span>
+                <div id="mytable"></div>
+            </div>        
+        </div>
+      </div> 
+      <div id="myModal1" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <span id="close1" title="close">&times;</span>
+                <h3 class='my-2'>Use the following Credentials for Testing.</h3>
+                    <p><b>1.</b> R No : 319106410047 & Password : 319106410047@123</p>
+                    <p><b>2.</b> R No : 319106410006 & Password : 319106410006@123</p>
+                    <p><b>3.</b> R No : 319106410003 & Password : 319106410003@123</p>
+                    <p><b>4.</b> R No : 319106410040 & Password : 319106410040@123</p>
+            </div>        
+        </div>
+      </div>
+  </div>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+      <!--https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>   
+      <script src='fee.js'></script>
+    </body>
+</html>
